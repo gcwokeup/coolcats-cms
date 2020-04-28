@@ -9,7 +9,7 @@ local:
 google:
   service: GCS
   project: coolcats-cms
-  credentials: <%= ENV['GOOGLE_APPLICATION_CREDENTIALS'].as_json %>
+  credentials: <%= Rails.application.credentials.gcs_coolcats_cms.to_json %>
   bucket: coolcats-cms-users
 
 google_dev:

@@ -34,7 +34,6 @@ gem 'bootstrap', '~> 4.4', '>= 4.4.1'
 
 gem 'google-cloud-storage', '~> 1.26'
 
-gem 'appengine', '~> 0.5.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
