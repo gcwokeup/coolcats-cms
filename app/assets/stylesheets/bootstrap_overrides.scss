@@ -1,3 +1,41 @@
-.bootstrap_overrides {
+a {
+  color: $gray;
 
+  &:hover {
+    color: $peach !important;
+  }
+}
+
+.btn-primary {
+  color: white !important;
+  background-color: $aqua;
+  border-color: $aqua;
+}
+
+.btn-primary:hover {
+  color: white;
+  background-color: $peach;
+  border-color: $peach;
+}
+
+.btn-primary:active {
+  color: white;
+  background-color: salmon !important;
+  border-color: salmon !important;
+}
+
+.formStyle {
+  background-color: $dark-gray;
+  padding: 20px;
+  width: 400px;
+  margin-bottom: 20px;
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+  border-bottom-color: #ecf0f1;
+  border-top-style: none;
+  border-right-style: none;
+  border-left-style: none;
+  font-size: 1em;
+  font-weight: 100;
+  color: #ffffff;
 }

@@ -1,0 +1,26 @@
+p#notice = notice
+
+p
+  strong Admin:
+  = @user.admin
+p
+  strong Username:
+  = @user.username
+p
+  strong First name:
+  = @user.first_name
+p
+  strong Last name:
+  = @user.last_name
+p
+  strong Email address:
+  = @user.email_address
+p
+  strong About:
+  = @user.about
+p
+  = image_tag(@user.avatar, width: 200) if @user.avatar.attached?
+
+=> link_to 'Edit', edit_user_path(@user)
+'|
+=< link_to 'Back', users_path

@@ -1,0 +1,35 @@
+h1 Listing users
+
+table
+  thead
+    tr
+      th Avatar
+      th Admin
+      th Username
+      th First name
+      th Last name
+      th Email address
+      th About
+      th Password digest
+      th
+      th
+      th
+
+  tbody
+    - @users.each do |user|
+      tr
+        td = image_tag(user.avatar, width: 100, class:"rounded-circle") if user.avatar.attached?
+        td = user.admin
+        td = user.username
+        td = user.first_name
+        td = user.last_name
+        td = user.email_address
+        td = user.about
+        td = user.password_digest
+        td = link_to 'Show', user
+        td = link_to 'Edit', edit_user_path(user)
+        td = link_to 'Destroy', user, data: { confirm: 'Are you sure?' }, method: :delete
+
+br
+
+= link_to 'New User', new_user_path
